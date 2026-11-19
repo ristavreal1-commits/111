@@ -11,16 +11,16 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <repositories>
-        <repository>
-            <id>papermc-repo</id>
-            <url>https://papermc.io</url>
-        </repository>
-        <repository>
-            <id>enginehub-repo</id>
-            <url>https://enginehub.org</url>
-        </repository>
-    </repositories>
+  <repositories>
+    <repository>
+        <id>papermc-repo</id>
+        <url>https://repo.papermc.io/repository/maven-public/</url>
+    </repository>
+    <repository>
+        <id>enginehub-repo</id>
+        <url>https://maven.enginehub.org/repo/</url>
+    </repository>
+</repositories>
 
     <dependencies>
         <dependency>
