@@ -1,0 +1,5 @@
+name: CreeperWitherFix
+version: 1.0
+main: ru.fix.creeperwither.CreeperWitherFix
+api-version: '1.20'
+depend: [WorldGuard]
