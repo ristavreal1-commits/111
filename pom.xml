@@ -15,29 +15,27 @@
         <sourceDirectory>.</sourceDirectory>
     </build>
 
-    <repositories>
-        <repository>
-            <id>papermc-repo</id>
-            <url>https://papermc.io</url>
-        </repository>
-        <repository>
-            <id>enginehub-repo</id>
-            <url>https://enginehub.org</url>
-        </repository>
-    </repositories>
-
     <dependencies>
         <dependency>
-            <groupId>io.papermc.paper</groupId>
-            <artifactId>paper-api</artifactId>
-            <version>1.21.4-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.21</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/spigot-api.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.sk89q.worldguard</groupId>
             <artifactId>worldguard-bukkit</artifactId>
-            <version>7.0.14-SNAPSHOT</version>
-            <scope>provided</scope>
+            <version>7.0.15</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/worldguard.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.sk89q.worldedit</groupId>
+            <artifactId>worldedit-bukkit</artifactId>
+            <version>7.3.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/worldedit.jar</systemPath>
         </dependency>
     </dependencies>
 </project>
