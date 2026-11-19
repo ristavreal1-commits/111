@@ -10,6 +10,12 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
+      - name: Download libs
+        run: |
+          mkdir -p libs
+          curl -L -o libs/spigot-api.jar "https://spigotmc.org"
+          curl -L -o libs/worldguard.jar "https://bukkit.org"
+          curl -L -o libs/worldedit.jar "https://bukkit.org"
       - run: mvn package
       - uses: actions/upload-artifact@v4
         with:
