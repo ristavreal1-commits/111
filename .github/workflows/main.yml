@@ -1,6 +1,6 @@
-yaml
 name: Build Plugin
-on: [push]
+on:
+  push:
 jobs:
   build:
     runs-on: ubuntu-latest
